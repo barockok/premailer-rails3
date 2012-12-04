@@ -14,5 +14,5 @@ module PremailerRails
     attr_accessor :config
   end
 end
-
-ActionMailer::Base.register_interceptor(PremailerRails::Hook)
+require 'premailer-rails3/railtie' if defined?(Rails)
+#ActionMailer::Base.register_interceptor(PremailerRails::Hook)
