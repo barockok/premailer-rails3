@@ -15,4 +15,4 @@ module PremailerRails
   end
 end
 require 'premailer-rails3/railtie' if defined?(Rails)
-#ActionMailer::Base.register_interceptor(PremailerRails::Hook)
+ActionMailer::Base.register_interceptor(PremailerRails::Hook)
